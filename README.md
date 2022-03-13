@@ -29,6 +29,11 @@ All codes for all the networks are in the folder prediction [link](https://githu
 There is a folder whit MATLAB code to undistort multiple images from .txt file. The format of the .txt file is the following: 1st column contains `path to the image`, 2nd column is `focal length`, 3rd column is `distortion parameter`. Each row corresponds to a single image. With a simple modification you can use it on a single image by giving direct path to it and predicted parameters. However, you need to change only `undist_from_txt.m` file, not the `undistSphIm.m`.
 It is one way to qualitatively assess the accuracy of predicted parameters is to use those to undistort images that were used to predict the parameters. [Undistoriton](https://github.com/arianyfranca01/calibration_of_camera_intrinsic_parameters/tree/main/undistortion)
 
+## Evaluation
+
+The code for the evaluation of undistorted images [link](https://github.com/arianyfranca01/calibration_of_camera_intrinsic_parameters/tree/main/metrics) calculates the Mean Square Error (MSE), Structural Similarity Index Measure (SSIM) and Peak-Signal-to Noise Ratio (PSNR) between two sets of images.
+
+
 ## Citation
 ```
 @inproceedings{bogdan2018deepcalib,
