@@ -5,6 +5,7 @@
 - [Requirements](#requirements)
 - [Dataset generation](#dataset-generation)
 - [Training DeepCalib](#training-deepcalib)
+- [Prediction](#Prediction)
 - [Undistortion](#undistortion)
 - [Citation](#citation)
 
@@ -22,10 +23,7 @@ There is a code for the whole data generation pipeline - folder [link](https://g
 To train choose you network: SingleNet, ResNet-50 or Vision Transformer (ViT). All the training codes are available in this [folder](https://github.com/arianyfranca01/calibration_of_camera_intrinsic_parameters/tree/main/network_training).
 
 ## Prediction
-All codes for all the networks are in the folder prediction [link](). We uploaded a simple python script for frame extraction from video sequence.
-
-## Weigths
-All weights are available on Google Drive [link](https://drive.google.com/drive/folders/1JmV7p6gFEt9mYPBxPcS2QfTUE-dePbLf?usp=sharing).
+All codes for all the networks are in the folder prediction [link](https://github.com/arianyfranca01/calibration_of_camera_intrinsic_parameters/tree/main/prediction). And all weights are available on Google Drive [link](https://drive.google.com/drive/folders/1JmV7p6gFEt9mYPBxPcS2QfTUE-dePbLf?usp=sharing).
 
 #### Undistortion
 There is a folder whit MATLAB code to undistort multiple images from .txt file. The format of the .txt file is the following: 1st column contains `path to the image`, 2nd column is `focal length`, 3rd column is `distortion parameter`. Each row corresponds to a single image. With a simple modification you can use it on a single image by giving direct path to it and predicted parameters. However, you need to change only `undist_from_txt.m` file, not the `undistSphIm.m`.
