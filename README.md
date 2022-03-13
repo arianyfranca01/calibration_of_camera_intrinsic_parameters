@@ -32,7 +32,7 @@ It is one way to qualitatively assess the accuracy of predicted parameters is to
 
 ## Evaluation
 
-The code for the evaluation of undistorted images [link](https://github.com/arianyfranca01/calibration_of_camera_intrinsic_parameters/tree/main/metrics) calculates the Mean Square Error (MSE), Structural Similarity Index Measure (SSIM) and Peak-Signal-to Noise Ratio (PSNR) between two sets of images.
+The code for the evaluation of undistorted images [link](https://github.com/arianyfranca01/calibration_of_camera_intrinsic_parameters/tree/main/metrics) calculates the Mean Square Error (MSE), Structural Similarity Index Measure (SSIM) and Peak-Signal-to Noise Ratio (PSNR) between two sets of images. In this analysis, three sets of images were compared. They are the set of images that received the undistortion with the focal length and distortion parameter values predicted by the model trained with ViT, the set with undistortion generated from the predictions made by the model known in SingleNet and the reference set, which received the undistortion with the labels.
 
 
 ## Citation
