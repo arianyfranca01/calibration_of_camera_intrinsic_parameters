@@ -16,10 +16,13 @@
 - OpenCV 4.5.5
 
 ## Dataset generation
-There is a code for the whole data generation pipeline - folder [link](). First you have to download sun360 dataset using Google drive [link](https://drive.google.com/drive/folders/1ooaYwvNuFd-iEEcmOQHpLunJEmo7b4NM). Then, use the code provided to generate your continuous dataset. Please, do not forget to [cite](https://scholar.google.co.kr/scholar?hl=en&as_sdt=0%2C5&as_vis=1&q=recognizing+scene+viewpoint+using+panoramic+place+representation&btnG=#d=gs_cit&u=%2Fscholar%3Fq%3Dinfo%3ARJsOQOkTaMEJ%3Ascholar.google.com%2F%26output%3Dcite%26scirp%3D0%26hl%3Den) the paper describing sun360 dataset.
+There is a code for the whole data generation pipeline - folder [link](https://github.com/arianyfranca01/calibration_of_camera_intrinsic_parameters/tree/main/dataset). First you have to download sun360 dataset using Google drive [link](https://drive.google.com/drive/folders/1ooaYwvNuFd-iEEcmOQHpLunJEmo7b4NM). Then, use the code provided to generate your continuous dataset. Please, do not forget to [cite](https://scholar.google.co.kr/scholar?hl=en&as_sdt=0%2C5&as_vis=1&q=recognizing+scene+viewpoint+using+panoramic+place+representation&btnG=#d=gs_cit&u=%2Fscholar%3Fq%3Dinfo%3ARJsOQOkTaMEJ%3Ascholar.google.com%2F%26output%3Dcite%26scirp%3D0%26hl%3Den) the paper describing sun360 dataset.
 
 ## Training DeepCalib
 To train choose you network: SingleNet, ResNet-50 or Vision Transformer (ViT). All the training codes are available in this [folder](https://github.com/arianyfranca01/calibration_of_camera_intrinsic_parameters/tree/main/network_training).
+
+## Prediction
+All codes for all the networks are in the folder prediction [link](). We uploaded a simple python script for frame extraction from video sequence.
 
 ## Weigths
 All weights are available on Google Drive [link](https://drive.google.com/drive/folders/1JmV7p6gFEt9mYPBxPcS2QfTUE-dePbLf?usp=sharing).
