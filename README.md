@@ -27,8 +27,7 @@ To train choose you network: SingleNet, ResNet-50 or Vision Transformer (ViT). A
 All codes for all the networks are in the folder prediction [link](https://github.com/arianyfranca01/calibration_of_camera_intrinsic_parameters/tree/main/prediction). And all weights are available on Google Drive [link](https://drive.google.com/drive/folders/1JmV7p6gFEt9mYPBxPcS2QfTUE-dePbLf?usp=sharing).
 
 #### Undistortion
-There is a folder whit MATLAB code to undistort multiple images from .txt file. The format of the .txt file is the following: 1st column contains `path to the image`, 2nd column is `focal length`, 3rd column is `distortion parameter`. Each row corresponds to a single image. With a simple modification you can use it on a single image by giving direct path to it and predicted parameters. However, you need to change only `undist_from_txt.m` file, not the `undistSphIm.m`.
-It is one way to qualitatively assess the accuracy of predicted parameters is to use those to undistort images that were used to predict the parameters. Folder: [Undistoriton](https://github.com/arianyfranca01/calibration_of_camera_intrinsic_parameters/tree/main/undistortion)
+There is a folder whit MATLAB code to undistort multiple images from .txt file. The format of the .txt file is the following: 1st column contains `path to the image`, 2nd column is `focal length`, 3rd column is `distortion parameter`. Each row corresponds to a single image. With a simple modification you can use it on a single image by giving direct path to it and predicted parameters. However, you need to change only `undist_from_txt.m` file, not the `undistSphIm.m`. Folder: [Undistoriton](https://github.com/arianyfranca01/calibration_of_camera_intrinsic_parameters/tree/main/undistortion).
 
 ## Evaluation
 
